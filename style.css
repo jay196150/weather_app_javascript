@@ -1,0 +1,264 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.tab.current-tab {
+    background-color:#0082D7;
+    border-radius: 4px;
+}
+
+.form-container.active {
+    scale:1;
+    opacity: 1;
+    display:flex;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    color:#273f5b ;
+    background-color: #78c4f7;
+    font-family: "Nunito",sans-serif;
+}
+
+h1 {
+     
+     text-align: center;
+     text-transform: uppercase;
+     padding-top: 20px;
+     font-weight: bold;
+     font-size: 3rem;
+    
+}
+
+.tab-container {
+    display: flex;
+    width: 90%;
+    margin-top: 10rem;
+    justify-content: space-between;
+    max-width: 550px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+.tab {
+    cursor: pointer;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    margin-block: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    /* defalut nildi jay */
+    all: unset;
+    font-size: 1rem;
+    color: white;
+    align-items: center;
+    text-transform: uppercase;
+    background-color:#01a23c;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.grant-location-container {
+    display: none;
+}
+.grant-location-container.active {   
+    display: flex;
+}
+
+.grant-location-container p:first-of-type {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.15rem;
+}
+.grant-location-container p:last-of-type {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.76rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.1rem;
+}
+
+.loading-container{
+    display: none;
+}
+
+.loading-container.active{
+    display: flex;
+}
+
+.loading-container p{
+    text-transform: uppercase;
+}
+
+.user-info-container {
+    display: none;
+}
+
+.user-info-container.active {
+    display: flex;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.name p{
+    font-size: 30px;
+    font-weight: 900;
+}
+.user-info-container img {
+    width: 90px;
+    height: 90px;
+} 
+.name img{
+  width: 30px;
+  height: 30px;
+}
+
+.user-info-container p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.user-info-container p[data-temp]{
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: white;
+}
+
+
+.parameter-container {
+ display: flex;
+ gap: 10px 20px;
+ justify-content: center;
+ margin: 2rem;
+}
+
+.parameter {
+    width: 30%;
+    min-width: 150px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(153, 221, 218, 0.801) ;
+    padding: 0 10px 10px;
+    border-radius: 30px;
+    align-content: center;
+    justify-content: center;
+}
+
+.parameter p{
+    align-self: center;
+    font-weight: 700;
+    
+}
+.parameter img {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.parameter p:first-of-type {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.parameter p:last-of-type {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.form-container {
+    display:none;
+     width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px; 
+     margin-bottom: 3rem; 
+} 
+
+.form-container.active {
+    display: flex;
+}
+
+.form-container input {
+    all: unset;
+    perspective: none;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    align-self: center;
+    background-color: beige;
+    border-radius: 10px;
+    
+}
+
+.form-container input:hover{
+    outline: 3px solid green;
+}
+
+.form-container input::placeholder {
+    font-size: 16px;
+}
+
+.form-container button {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.error {
+    display: none;
+}
+
+.error.active {
+    display: flex;
+}
+.sum {
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+}
+
+.badal{
+    position: absolute;
+    bottom: 3rem;
+    right:  8rem;
+}
